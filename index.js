@@ -6,20 +6,19 @@ const word2 = generate()
 console.log(`The ${chalk.greenBright(word1)} is ${chalk.redBright(word2)}.`)
 
 function linter() {
-  // 1. Nicht verwendete Variable
-  let unusedVariable = 'Hello' // ESLint sollte hier eine Warnung ausgeben
+  // Nicht verwendete Variable
+  let unusedVariable = 'Hello'
 
-  // 2. Nicht definierte Variable
-  console.log(undeclaredVariable) // ESLint sollte einen Fehler wegen der undefinierten Variable anzeigen
+  // Nicht definierte Variable
+  console.log(undeclaredVariable)
 
-  // 3. Verwendung von == anstelle von ===
+  // Verwendung von == anstelle von ===
   if ('1' == 1) {
-    // ESLint sollte hier eine Warnung wegen der Verwendung von "==" anstelle von "===" anzeigen
     console.log('Loose equality')
   }
 
-  // 4. Verwendung von var statt let oder const
-  var x = 10 // ESLint sollte hier einen Fehler anzeigen, weil "var" verwendet wird, statt "let" oder "const"
+  // Verwendung von var statt let oder const
+  var x = 10
 }
 
 // testing
