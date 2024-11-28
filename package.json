@@ -1,0 +1,28 @@
+{
+  "name": "linter-aufgabe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint .",
+    "format-write": "prettier --write .",
+    "format-check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "npm-check-updates": "^17.1.11",
+    "prettier": "^3.4.1",
+    "random-words": "^2.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0"
+  }
+}
